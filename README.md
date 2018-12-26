@@ -1,3 +1,9 @@
-# OKCoin Exchange Bot
+# Exchange Bot
 
-OKCoin의 API를 사용하여 트레이딩 봇을 제작해보았음.
+- Supported: OKCoin
+
+## Install
+
+1. Install Requirements: `pip install -r requirements.txt`
+
+2. Unittest: `python -m unittest tests.test_okcoin`
