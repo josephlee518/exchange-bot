@@ -1,3 +1,10 @@
+"""
+오케이코인 코리아 래퍼
+
+본 래퍼를 사용함으로써 생기는 문제는 본인에게 있습니다
+
+SEUNGWOO LEE, ALL RIGHTS RESERVED.
+"""
 import configparser
 import hashlib
 import urllib
@@ -5,10 +12,6 @@ import requests
 import time
 
 class OKCoin:
-    """
-    Python OKCoin Wrapper
-    SEUNGWOO LEE
-    """
     
     def __init__(self):
         self._API_URL = 'https://www.okcoinkr.com/api/'
