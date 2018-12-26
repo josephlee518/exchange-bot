@@ -4,6 +4,6 @@
 
 ## Install
 
-1. Install Requirements: `pip install -r requirements.txt`
+1. `pip install requests` 
 
 2. Unittest: `python -m unittest tests.test_okcoin`
