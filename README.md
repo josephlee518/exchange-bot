@@ -8,6 +8,10 @@
 
 2. Unittest: `python -m unittest tests.test_okcoin`
 
+3. And Import!
+
+**NOTE**: It's Made on Python 3.7 (x64, Ubuntu Linux 18)
+
 ## How to make a configfile?
 
 - **You should set your config file first** on `conf/config.ini`
