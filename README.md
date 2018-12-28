@@ -1,6 +1,6 @@
 # Exchange Bot
 
-- Supported: OKCoin
+- Supported: OKCoinKR
 
 ## Install
 
@@ -19,13 +19,26 @@
     - and Write like this
 
     ```ini
+    [DAYBIT]
+    daybit_access_key = 
+    daybit_secret_key = 
+
     [OKCOIN]
     okcoin_api_key = 
     okcoin_secret_key = 
-    
+
+    # If you're using MongoDB, You don't need to write information on SQLITE section
     [MONGODB]
     DB_IP = 
     DB_PORT = 
     DB_NAME = 
     DB_COL = 
+
+    [SQLITE]
+    FILENAME = 
+    TABLENAME = 
+
+    [LOGGING]
+    directory = 
+    logging = 
     ```
