@@ -46,3 +46,21 @@
     directory = 
     logging = 
     ```
+
+## Python Test in VSCode
+
+- To run test in Python, You should change some file (`settings.json`) in VSCode (or other editor can be used).
+
+```json
+{
+    "python.unitTest.unittestEnabled": true, // If you're using unittest, Set true
+    "python.unitTest.pyTestEnabled": false, // If you're using pyTest, Set true
+    "python.unitTest.nosetestsEnabled": false, // If you're using nosetests, Set true 
+    "python.unitTest.cwd": "~/exchange-bot", // Currently Working Directory
+    "python.unitTest.unittestArgs": [
+        "-v", // give verbosity options
+        "-s", "tests", // Selecting folder to gather with
+        "-p", "*test_*.py" // test file named *test_* 
+    ]
+}
+```
