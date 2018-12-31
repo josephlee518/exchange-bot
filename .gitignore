@@ -1,3 +1,5 @@
 config.ini
 *.log
 *.pyc
+.ipynb_checkpoints
+.vscode

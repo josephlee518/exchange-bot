@@ -14,7 +14,8 @@ class OKCoinModuleTest(unittest.TestCase):
     
     def test_getorderinfo(self):
         """주문정보 가져오기"""
-        self.orderinfo = self.okcoin.get_order_info(symbol='btc_krw', order_id="-1")
+        # 주문한 정보가 없으므로 -1 추가해서 데이터 가져오는 명령을 내림
+        self.orderinfo = self.okcoin.get_order_info(symbol='btc_krw', order_id="-1") 
         assert self.orderinfo
         print(self.orderinfo)
     
