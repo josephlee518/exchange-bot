@@ -1,5 +1,3 @@
-import sys
-sys.path.insert(0,'../')
 from machine.db.MongoDB import MongoDB
 from machine.okcoin import OKCoin
 from datetime import datetime
@@ -14,8 +12,6 @@ app.conf.beat_schedule = {
         'args': {}
     }, 
 }
-
-
 
 @app.task
 def get_currency_info():
