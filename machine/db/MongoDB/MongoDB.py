@@ -11,7 +11,7 @@ class MongoDB:
         모든 설정은 conf 폴더의 config.ini를 읽어서 진행합니다.
         """
         self._config = configparser.ConfigParser()
-        self._config.read('../conf/config.ini')
+        self._config.read('conf/config.ini')
         self._cursor = MongoClient(host=self._config['MONGODB']['DB_IP'], port=int(self._config['MONGODB']['DB_PORT']))
         self._db = self._cursor[self._config['MONGODB']['DB_NAME']]
         self._col = self._db[self._config['MONGODB']['DB_COL']]

@@ -47,6 +47,10 @@
     logging = 
     ```
 
+    - If you're using `Redis` and `Docker Image`, Use Redis to Store Keys
+
+        - **SEE** `get-credentials.py`
+
 ## Python Test in VSCode
 
 - To run test in Python, You should change some file (`settings.json`) in VSCode (or other editor can be used).

@@ -15,8 +15,6 @@ app.conf.beat_schedule = {
     }, 
 }
 
-
-
 @app.task
 def get_currency_info():
     okcoin = OKCoin()
