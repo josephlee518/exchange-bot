@@ -21,5 +21,4 @@ RUN git clone https://github.com/josephlee518/exchange-bot
 RUN pip install -r /exchange-bot/requirements.txt
 
 # RUN Trade.py forever
-RUN cd /exchange-bot/scheduler
-ENTRYPOINT celery -A scheduler_currency_price worker --loglevel=info
+ENTRYPOINT cd /exchange-bot/scheduler && celery -A scheduler_currency_price worker --loglevel=info

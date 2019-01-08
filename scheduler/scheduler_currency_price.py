@@ -5,7 +5,7 @@ from machine.okcoin import OKCoin
 from datetime import datetime
 from celery import Celery, Task
 
-app = Celery('currency_info', broker='redis://172.17.0.3/')
+app = Celery('currency_info', broker='redis://172.30.100.104/')
 
 app.conf.beat_schedule = {
     'app-every-1-min': {
