@@ -7,6 +7,7 @@ SEUNGWOO LEE, ALL RIGHTS RESERVED.
 """
 import configparser
 import hashlib
+import redis
 import urllib
 import requests
 import time
@@ -16,9 +17,10 @@ class OKCoin:
     def __init__(self, mode='normal'):
         self._API_URL = 'https://www.okcoinkr.com/api/'
         self._config = configparser.ConfigParser()
-        self._config.read('../conf/config.ini')
+        self._config.read('conf/config.ini')
         self.CLIENT_API_KEY = self._config['OKCOIN']['okcoin_api_key']
         self.CLIENT_API_SECRET = self._config['OKCOIN']['okcoin_secret_key']
+
     
     def get_ticker(self, symbol=None):
         """
